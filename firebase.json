@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/sipnplay",
+    "public": "dist/sipnplay/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
