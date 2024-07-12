@@ -8,3 +8,35 @@
   // justify-content: center;
   // align-items: center;
 }
+
+.reservation_button{
+  background-image: url("../../../assets/background-start-button.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 220px;
+  height: 75px;
+  background-color: transparent;
+  border-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex; /* Utiliza flexbox para centrar el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+
+.reservation_button:hover {
+  transform: scale(1.2); /* Escala el botón 1.5 veces su tamaño original */
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado de todos los enlaces */
+}
+
+/* Opcional: Si quieres mantener algún estilo visual en el estado hover */
+a:hover {
+  text-decoration: none; /* Asegura que el subrayado permanezca eliminado en el hover */
+}
