@@ -1,17 +1,35 @@
 .header {
-    position: fixed;
-    top: 10vh;
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #c2623d;
-    border-radius: 10px;
-    z-index: 1000;
+  position: fixed;
+  top: 6vh;
+  display: flex;
+  width: 80%;
+  max-width: 1600px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  z-index: 1000;
+    background-image: url("../../../assets/menu-header-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
+    color: white;
 }
 a {
   cursor: pointer;
 }
 .header img {
   padding: 16px 25px;
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado de todos los enlaces */
+}
+
+/* Opcional: Si quieres mantener algún estilo visual en el estado hover */
+a:hover {
+  text-decoration: none; /* Asegura que el subrayado permanezca eliminado en el hover */
 }
