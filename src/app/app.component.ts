@@ -1,23 +1,13 @@
-import { Component, inject } from "@angular/core";
-import { toSignal } from "@angular/core/rxjs-interop";
-import { NavigationEnd, Router, RouterLink, RouterOutlet } from "@angular/router";
-import { filter, map, startWith } from "rxjs";
-import { ArrowBackIconComponent } from "./components/icons/arrow-back-icon.component";
+import { Component } from "@angular/core";
+import { RouterLink, RouterOutlet } from "@angular/router";
+import { HeaderComponent } from "./components/header/header.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, ArrowBackIconComponent, RouterLink],
+  imports: [HeaderComponent, FooterComponent, RouterOutlet, RouterLink],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
 })
-export class AppComponent {
-  private readonly router = inject(Router);
-  private readonly isMainPage$ = this.router.events.pipe(
-    filter((event): event is NavigationEnd => event instanceof NavigationEnd),
-    map((event: NavigationEnd) => event.url === "/"),
-    startWith(true)
-  );
-
-  isMainPage = toSignal(this.isMainPage$);
-}
+export class AppComponent {}

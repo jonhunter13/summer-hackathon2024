@@ -1,18 +1,21 @@
-import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { ApplicationConfig } from "@angular/core";
+import { provideRouter } from "@angular/router";
 
-import { routes } from './app.routes';
-import { provideClientHydration } from '@angular/platform-browser';
-import { WINDOW, windowProvider } from './providers/window';
-import { DOCUMENT } from '@angular/common';
+import { routes } from "./app.routes";
+import { provideClientHydration } from "@angular/platform-browser";
+import { WINDOW, windowProvider } from "./providers/window";
+import { DOCUMENT } from "@angular/common";
+import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes),
+  providers: [
+    provideRouter(routes),
     provideClientHydration(),
     {
       provide: WINDOW,
       useFactory: (document: Document) => windowProvider(document),
       deps: [DOCUMENT],
     },
-  ]
+    provideAnimationsAsync(),
+  ],
 };

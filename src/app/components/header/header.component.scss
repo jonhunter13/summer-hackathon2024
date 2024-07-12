@@ -1,0 +1,17 @@
+.header {
+    position: fixed;
+    top: 10vh;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c2623d;
+    border-radius: 10px;
+    z-index: 1000;
+}
+a {
+  cursor: pointer;
+}
+.header img {
+  padding: 16px 25px;
+}
