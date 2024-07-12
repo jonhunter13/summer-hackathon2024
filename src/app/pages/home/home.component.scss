@@ -1,12 +1,35 @@
 .homepage-castle {
   background-image: url('../../../assets/homepage-castle.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 100%;
   display: flex;
-  max-height: 100px;
-  // justify-content: center;
-  // align-items: center;
+  width: 50% !important;
+  background-repeat: no-repeat;
+  top: 116px;
+  margin-left: -58px;
+}
+
+.hometotalcontainer{
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.global-home-head{
+  height: 300px;
+}
+
+.first-home{
+  margin-left: 135px;
+}
+
+.homecontainer{
+  background-image: url("../../../assets/laptop-frame.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 310px;
 }
 
 .reservation_button{
