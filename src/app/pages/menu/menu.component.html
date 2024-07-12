@@ -1,47 +1,53 @@
-<div class="container">
+<div class="container menu-page">
   <page-header-menu></page-header-menu>
-  <mat-grid-list cols="4" rowHeight="500px">
+  <mat-grid-list cols="4" rowHeight="500px" class="menu-section-one">
+    <div class="framed">  </div>
     <mat-grid-tile class="menu-item-list">
-      <h2>Coffee</h2>
+      <h2 style="color: black; font-size: 32px !important;">Coffee</h2>
       @for (item of getMenuItems("coffee"); track item) {
-        <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect($event)"></app-menu-item>
+        <app-menu-item class="menu-item" [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect($event)"></app-menu-item>
       }
     </mat-grid-tile>
     <mat-grid-tile class="menu-item-list">
-      <h2>Specialty Drinks</h2>
+      <h2 style="color: black; font-size: 32px !important;">Specialty Drinks</h2>
       @for (item of getMenuItems("specialty"); track item) {
         <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect($event)"></app-menu-item>
       }
     </mat-grid-tile>
     <mat-grid-tile class="menu-item-list">
-      <h2>Boba</h2>
+      <h2 style="color: black; font-size: 32px !important;">Boba</h2>
       @for (item of getMenuItems("boba"); track item) {
         <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect($event)"></app-menu-item>
       }
     </mat-grid-tile>
     <mat-grid-tile>
+      
       <menu-item-preview style="width: 600px; height: 400px" [selectedMenuItem]="selectedMenuItem"></menu-item-preview>
+   
     </mat-grid-tile>
   </mat-grid-list>
+
   <mat-divider style="padding: 30px"></mat-divider>
+
   <mat-grid-list cols="4" rowHeight="500px">
+    <div class="framed-two">  </div>
     <mat-grid-tile>
       <menu-item-preview style="width: 600px; height: 400px" [selectedMenuItem]="selectedMenuItem2"></menu-item-preview>
     </mat-grid-tile>
-    <mat-grid-tile class="menu-item-list">
-      <h2>Hot Bites</h2>
+    <mat-grid-tile class="menu-item-list" style='margin-left: 100px;'>
+      <h2 style="color: black; font-size: 32px !important;">Hot Bites</h2>
       @for (item of getMenuItems("hot bites"); track item) {
         <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect2($event)"></app-menu-item>
       }
     </mat-grid-tile>
-    <mat-grid-tile class="menu-item-list">
-      <h2>Sandwiches</h2>
+    <mat-grid-tile class="menu-item-list" style='margin-left: 100px;'>
+      <h2 style="color: black; font-size: 32px !important;">Sandwiches</h2>
       @for (item of getMenuItems("sandwiches"); track item) {
         <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect2($event)"></app-menu-item>
       }
     </mat-grid-tile>
-    <mat-grid-tile class="menu-item-list">
-      <h2>Seasonal</h2>
+    <mat-grid-tile class="menu-item-list" style='margin-left: 100px;'>
+      <h2 style="color: black; font-size: 32px !important;">Seasonal</h2>
       @for (item of getMenuItems("seasonal"); track item) {
         <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect2($event)"></app-menu-item>
       }

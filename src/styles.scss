@@ -28,6 +28,22 @@
 
 * {
   margin: 0;
+
+}
+
+p{
+  font-family: "Press Start 2P", "Helvetica Neue", sans-serif;
+}
+
+a{
+  font-family: "Press Start 2P", "Helvetica Neue", sans-serif;
+}
+
+button{
+  font-family: "Press Start 2P", "Helvetica Neue", sans-serif;
+}
+
+div{
   font-family: "Press Start 2P", "Helvetica Neue", sans-serif;
 }
 
@@ -74,6 +90,16 @@ a:hover {
 .button:active {
   scale: 0.97;
 }
+
+a {
+  text-decoration: none; /* Elimina el subrayado de todos los enlaces */
+}
+
+/* Opcional: Si quieres mantener algún estilo visual en el estado hover */
+a:hover {
+  text-decoration: none; /* Asegura que el subrayado permanezca eliminado en el hover */
+}
+
 
 .pixeled-button {
   background-image: url("assets/background-start-button.png");

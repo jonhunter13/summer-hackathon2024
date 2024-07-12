@@ -62,9 +62,9 @@ export class MenuItemPreviewComponent implements OnInit, AfterViewInit, OnChange
 
     // Create the camera
     this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 100);
-    this.camera.position.z = 7;
-    this.camera.position.y = 2;
-    this.camera.position.x = 4;
+    this.camera.position.z = 4;
+    this.camera.position.y = 1;
+    this.camera.position.x = 2;
 
     // Add lights
     const ambientLight = new THREE.AmbientLight(0x404040, 100); // soft white light

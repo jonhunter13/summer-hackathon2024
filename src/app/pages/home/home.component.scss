@@ -55,11 +55,3 @@
   transform: scale(1.2); /* Escala el botón 1.5 veces su tamaño original */
 }
 
-a {
-  text-decoration: none; /* Elimina el subrayado de todos los enlaces */
-}
-
-/* Opcional: Si quieres mantener algún estilo visual en el estado hover */
-a:hover {
-  text-decoration: none; /* Asegura que el subrayado permanezca eliminado en el hover */
-}

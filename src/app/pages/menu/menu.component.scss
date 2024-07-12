@@ -7,3 +7,48 @@
     justify-content: space-around;
     padding: 20px;
 }
+
+.menu-page{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+}
+
+.menu-section-one{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.menu-item{
+    font-family: "VT323", "Helvetica Neue", sans-serif !important;
+    font-size: 18px;
+  }
+
+  .framed{
+        background-image: url("../../../assets/latte.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 592px;
+        position: relative;
+        z-index: 200;
+        width: 495px;
+        float: right;
+        right: -77px;
+        top: -96px;
+  }
+
+  .framed-two{
+    background-image: url("../../../assets/sandwichframe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 592px;
+    position: relative;
+    z-index: 200;
+    width: 495px;
+    float: left;
+    left: -67px;
+    top: -96px;
+}
