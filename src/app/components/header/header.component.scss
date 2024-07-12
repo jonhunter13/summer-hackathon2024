@@ -58,3 +58,12 @@ a {
 a:hover {
   text-decoration: none; 
 }
+
+@media screen and (max-width: 768px){
+  .fixed-image-header-1{
+    display: none;
+  }
+  .fixed-image-header-2{
+    display: none;
+  }
+}

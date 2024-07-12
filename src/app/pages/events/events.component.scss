@@ -1,3 +1,11 @@
+.events-page
+{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
 .events-calendar {
     display: flex;
     flex-direction: column;
@@ -6,6 +14,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.events-intro {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 45px;
 }
 
 .month {
