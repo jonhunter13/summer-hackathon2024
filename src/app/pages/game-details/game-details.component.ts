@@ -1,13 +1,13 @@
 import { Component } from "@angular/core";
 import games from "../../../assets/datasources/board_games.json";
 import { BoardGame } from "../../interfaces/board-game.interface";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, RouterLink } from "@angular/router";
 import { MatGridListModule } from "@angular/material/grid-list";
 
 @Component({
   selector: "app-game-details",
   standalone: true,
-  imports: [MatGridListModule],
+  imports: [MatGridListModule, RouterLink],
   templateUrl: "./game-details.component.html",
   styleUrl: "./game-details.component.scss",
 })
