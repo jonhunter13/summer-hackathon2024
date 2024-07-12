@@ -1,4 +1,8 @@
 .game-details {
+    background-image: url('../../../assets/Board game background map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     color: #000000;
 }
@@ -35,8 +39,7 @@
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
-    margin-top: 300px;
+    margin-top: 150px;
 }
 
 .game-details-info-item{
