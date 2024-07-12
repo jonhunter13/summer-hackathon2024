@@ -1,0 +1,278 @@
+[
+    {
+        "title": "LATTE",
+        "category": "coffee",
+        "threeJsFile": "cafe_latte_with_art.glb",
+        "price": "$4.75(H)/$5.25(C)"
+    },
+    {
+        "title": "CORTADO",
+        "category": "coffee",
+        "threeJsFile": "cortado.glb",
+        "price": "$4.25(H)/$4.75(C)"
+    },
+    {
+        "title": "DRIP COFFEE",
+        "category": "coffee",
+        "threeJsFile": "drip_coffee.glb",
+        "price": "$4(H)/$4.25(C)"
+    },
+    {
+        "title": "CAFE AU LAIT",
+        "category": "coffee",
+        "threeJsFile": "cafe_au_lait.glb",
+        "price": "$3.25(H)"
+    },
+    {
+        "title": "CAPPUCINO",
+        "category": "coffee",
+        "threeJsFile": "cappucino.glb",
+        "price": "$4.50(H)"
+    },
+    {
+        "title": "MOCHA",
+        "category": "coffee",
+        "threeJsFile": "mocha.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "RED EYE",
+        "category": "coffee",
+        "threeJsFile": "red_eye.glb",
+        "price": "$4.50(H)/$4.75(C)"
+    },
+    {
+        "title": "AMERICANO",
+        "category": "coffee",
+        "threeJsFile": "americano.glb",
+        "price": "$3.75(H)/$4.25(C)"
+    },
+    {
+        "title": "MATCHA LATTE",
+        "category": "specialty",
+        "threeJsFile": "matcha_latte.glb",
+        "price": "$5.25(H)/$5.75(C)"
+    },
+    {
+        "title": "HOT CHOCOLATE",
+        "category": "specialty",
+        "threeJsFile": "hot_chocolate.glb",
+        "price": "$4.50(H)"
+    },
+    {
+        "title": "NUTELLA LATTE",
+        "category": "specialty",
+        "threeJsFile": "nutella_latte.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "CHAI",
+        "category": "specialty",
+        "threeJsFile": "chai.glb",
+        "price": "$5.00(H)/$5.50(C)"
+    },
+    {
+        "title": "DIRTY CHAI",
+        "category": "specialty",
+        "threeJsFile": "dirty_chai.glb",
+        "price": "$6.25(H)/$6.75(C)"
+    },
+    {
+        "title": "LAVENDAR LATTE",
+        "category": "specialty",
+        "threeJsFile": "lavendar_latte.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "ROSE LATTE",
+        "category": "specialty",
+        "threeJsFile": "rose_latte.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "BROWN SUGAR LATTE",
+        "category": "specialty",
+        "threeJsFile": "brown_sugar_latte.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "MATCHA LATTE",
+        "category": "boba",
+        "threeJsFile": "boba_tea_cup.glb",
+        "price": "$5.25(H)/$5.75(C)"
+    },
+    {
+        "title": "HOT CHOCOLATE",
+        "category": "boba",
+        "threeJsFile": "hot_chocolate_boba.glb",
+        "price": "$4.50(H)"
+    },
+    {
+        "title": "NUTELLA LATTE",
+        "category": "boba",
+        "threeJsFile": "nutella_latte_boba.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "CHAI",
+        "category": "boba",
+        "threeJsFile": "chai_boba.glb",
+        "price": "$5.00(H)/$5.50(C)"
+    },
+    {
+        "title": "DIRTY CHAI",
+        "category": "boba",
+        "threeJsFile": "dirty_chai_boba.glb",
+        "price": "$6.25(H)/$6.75(C)"
+    },
+    {
+        "title": "LAVENDAR LATTE",
+        "category": "boba",
+        "threeJsFile": "lavendar_latte_boba.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "ROSE LATTE",
+        "category": "boba",
+        "threeJsFile": "rose_latte_boba.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "BROWN SUGAR LATTE",
+        "category": "boba",
+        "threeJsFile": "brown_sugar_latte_boba.glb",
+        "price": "$5.75(H)/$6.25(C)"
+    },
+    {
+        "title": "CHICKEN POPPERS",
+        "category": "hot bites",
+        "threeJsFile": "chicken_poppers.glb",
+        "price": "$6.00"
+    },
+    {
+        "title": "MOZZ STICKS",
+        "category": "hot bites",
+        "threeJsFile": "mozz_sticks.glb",
+        "price": "$7.00"
+    },
+    {
+        "title": "PIGS IN A BLANKET",
+        "category": "hot bites",
+        "threeJsFile": "pigs_in_a_blanket.glb",
+        "price": "$7.00"
+    },
+    {
+        "title": "TATER TOTS",
+        "category": "hot bites",
+        "threeJsFile": "tater_tots.glb",
+        "price": "$5.00"
+    },
+    {
+        "title": "CHICKEN TENDERS",
+        "category": "hot bites",
+        "threeJsFile": "chicken_tenders.glb",
+        "price": "$8.00"
+    },
+    {
+        "title": "ONION RINGS",
+        "category": "hot bites",
+        "threeJsFile": "onion_rings.glb",
+        "price": "$5.00"
+    },
+    {
+        "title": "FRIES",
+        "category": "hot bites",
+        "threeJsFile": "fries.glb",
+        "price": "$5.00"
+    },
+    {
+        "title": "SWEET POTATO FRIES",
+        "category": "hot bites",
+        "threeJsFile": "sweet_potato_fries.glb",
+        "price": "$6.00"
+    },
+    {
+        "title": "BEYOND BUSSIN SANDWICH",
+        "category": "sandwiches",
+        "threeJsFile": "beyond_bussin_sandwich.glb",
+        "price": "$15.00"
+    },
+    {
+        "title": "SPICY CHICKEN SANDWICH",
+        "category": "sandwiches",
+        "threeJsFile": "spicy_chicken_sandwich.glb",
+        "price": "$13.00"
+    },
+    {
+        "title": "ITALIAN PANINI",
+        "category": "sandwiches",
+        "threeJsFile": "italian_panini.glb",
+        "price": "$11.00"
+    },
+    {
+        "title": "TUNA MELT",
+        "category": "sandwiches",
+        "threeJsFile": "tuna_melt.glb",
+        "price": "$11.00"
+    },
+    {
+        "title": "ZESTO CHICKEN SANDWICH",
+        "category": "sandwiches",
+        "threeJsFile": "zesto_chicken_sandwich.glb",
+        "price": "$13.00"
+    },
+    {
+        "title": "TURKEY CLUB",
+        "category": "sandwiches",
+        "threeJsFile": "turkey_club.glb",
+        "price": "$11.00"
+    },
+    {
+        "title": "GRILLED CHEESE",
+        "category": "sandwiches",
+        "threeJsFile": "grilled_cheese.glb",
+        "price": "$6.50"
+    },
+    {
+        "title": "MIXED GREEN SALAD",
+        "category": "sandwiches",
+        "threeJsFile": "mixed_green_salad.glb",
+        "price": "$6.50"
+    },
+    {
+        "title": "MATCHA LEMONADE",
+        "category": "seasonal",
+        "threeJsFile": "matcha_lemonade.glb",
+        "price": "Medium: $5.00"
+    },
+    {
+        "title": "YUZU-ADE",
+        "category": "seasonal",
+        "threeJsFile": "yuzu_ade.glb",
+        "price": "Large: $5.25"
+    },
+    {
+        "title": "FRESHLY SQUEEZED LEMONADE",
+        "category": "seasonal",
+        "threeJsFile": "freshly_squeezed_lemonade.glb",
+        "price": "Medium: $4.00"
+    },
+    {
+        "title": "MATCHA LAVENDER OAT",
+        "category": "seasonal",
+        "threeJsFile": "matcha_lavender_oat.glb",
+        "price": "$6.50"
+    },
+    {
+        "title": "BERRY LAVENDAR LEMONADE",
+        "category": "seasonal",
+        "threeJsFile": "berry_lavendar_lemonade.glb",
+        "price": "Medium: $5.25"
+    },
+    {
+        "title": "CITRUS BOBA",
+        "category": "seasonal",
+        "threeJsFile": "citrus_boba.glb",
+        "price": "Large: $6.00"
+    }
+]
