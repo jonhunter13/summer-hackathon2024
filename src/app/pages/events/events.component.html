@@ -10,20 +10,7 @@
       </p>
     </mat-grid-tile>
     <mat-grid-tile class="events-calendar">
-      <div class="month">
-        {{ month }}
-      </div>
-      <div class="event-details">
-        <h2>Upcoming Events</h2>
-        <ul>
-          <li *ngFor="let event of events">
-            <h3>{{ event.title }}</h3>
-            <p>{{ event.description }}</p>
-            <p>{{ event.date }}</p>
-            <p>{{ event.duration }}</p>
-          </li>
-        </ul>
-      </div>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%234285F4&title=Sip%20%26%20Play&src=ZDVlYmFkMGJmMTA2MTEwMDhkM2QxMmY1ZTEwN2U0MGU3YTQzNjc2YjE5OGNmMzk1NWVjYTUzYTE3MWZhYzhjNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB&color=%233F51B5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
