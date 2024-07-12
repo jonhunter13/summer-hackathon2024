@@ -4,19 +4,19 @@
     <mat-grid-tile class="menu-item-list">
       <h2>Coffee</h2>
       @for (item of getMenuItems("coffee"); track item) {
-        <app-menu-item [menuItem]="item"></app-menu-item>
+        <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect($event)"></app-menu-item>
       }
     </mat-grid-tile>
     <mat-grid-tile class="menu-item-list">
       <h2>Specialty Drinks</h2>
       @for (item of getMenuItems("specialty"); track item) {
-        <app-menu-item [menuItem]="item"></app-menu-item>
+        <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect($event)"></app-menu-item>
       }
     </mat-grid-tile>
     <mat-grid-tile class="menu-item-list">
       <h2>Boba</h2>
       @for (item of getMenuItems("boba"); track item) {
-        <app-menu-item [menuItem]="item"></app-menu-item>
+        <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect($event)"></app-menu-item>
       }
     </mat-grid-tile>
     <mat-grid-tile>
@@ -31,19 +31,19 @@
     <mat-grid-tile class="menu-item-list">
       <h2>Hot Bites</h2>
       @for (item of getMenuItems("hot bites"); track item) {
-        <app-menu-item [menuItem]="item"></app-menu-item>
+        <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect2($event)"></app-menu-item>
       }
     </mat-grid-tile>
     <mat-grid-tile class="menu-item-list">
       <h2>Sandwiches</h2>
       @for (item of getMenuItems("sandwiches"); track item) {
-        <app-menu-item [menuItem]="item"></app-menu-item>
+        <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect2($event)"></app-menu-item>
       }
     </mat-grid-tile>
     <mat-grid-tile class="menu-item-list">
       <h2>Seasonal</h2>
       @for (item of getMenuItems("seasonal"); track item) {
-        <app-menu-item [menuItem]="item"></app-menu-item>
+        <app-menu-item [menuItem]="item" (menuSelectEvent)="handleMenuItemSelect2($event)"></app-menu-item>
       }
     </mat-grid-tile>
   </mat-grid-list>

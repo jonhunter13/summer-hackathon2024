@@ -25,15 +25,38 @@ import { MenuItemPreviewComponent } from "./menu-item-preview/menu-item-preview.
   encapsulation: ViewEncapsulation.None,
 })
 export class MenuComponent implements OnInit {
-  items = items;
+  items = items as MenuItem[];
   selectedMenuItem: MenuItem = items[0];
-  selectedMenuItem2: MenuItem = items.find((item: MenuItem) => item.threeJsFile === 'chicken_poppers.glb')!;
+  selectedMenuItem2: MenuItem = items.find((item: MenuItem) => item.threeJsFile === "chicken_poppers.glb")!;
 
   ngOnInit(): void {
-    this.items = items.map((item: MenuItem) => ({ ...item, selected: false }));
+    this.selectDefaultRenderedMenuItems();
   }
 
   getMenuItems(category: Category): MenuItem[] {
     return this.items.filter((item: MenuItem) => item.category === category);
+  }
+
+  handleMenuItemSelect(selectedMenuItem: MenuItem) {
+    const menuItemIdx = this.items.findIndex((item: MenuItem) => item.title === this.selectedMenuItem.title);
+    this.items[menuItemIdx] = { ...this.selectedMenuItem, selected: false };
+
+    const newMenuItemStateIdx = this.items.findIndex((item: MenuItem) => item.title === selectedMenuItem.title);
+    this.items[newMenuItemStateIdx] = { ...selectedMenuItem, selected: true };
+    this.selectedMenuItem = this.items[newMenuItemStateIdx];
+  }
+
+  handleMenuItemSelect2(selectedMenuItem: MenuItem) {
+    const menuItemIdx = this.items.findIndex((item: MenuItem) => item.title === this.selectedMenuItem2.title);
+    this.items[menuItemIdx] = { ...this.selectedMenuItem2, selected: false };
+
+    const newMenuItemStateIdx = this.items.findIndex((item: MenuItem) => item.title === selectedMenuItem.title);
+    this.items[newMenuItemStateIdx] = { ...selectedMenuItem, selected: true };
+    this.selectedMenuItem2 = this.items[newMenuItemStateIdx];
+  }
+
+  selectDefaultRenderedMenuItems() {
+    this.handleMenuItemSelect(this.selectedMenuItem);
+    this.handleMenuItemSelect2(this.selectedMenuItem2);
   }
 }

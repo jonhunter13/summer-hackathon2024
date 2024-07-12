@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Inject, Input, OnInit, PLATFORM_ID } from "@angular/core";
+import { AfterViewInit, Component, ElementRef, Inject, Input, OnChanges, OnInit, PLATFORM_ID } from "@angular/core";
 import * as THREE from "three";
 import { MenuItem } from "../../../interfaces/menu-item.interface";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -12,7 +12,7 @@ import { WINDOW } from "../../../providers/window";
   templateUrl: "./menu-item-preview.component.html",
   styleUrl: "./menu-item-preview.component.scss",
 })
-export class MenuItemPreviewComponent implements OnInit, AfterViewInit {
+export class MenuItemPreviewComponent implements OnInit, AfterViewInit, OnChanges {
   private renderer: THREE.WebGLRenderer | undefined;
   private scene: THREE.Scene | undefined;
   private camera: THREE.PerspectiveCamera | undefined;
@@ -31,12 +31,19 @@ export class MenuItemPreviewComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {}
 
+  ngOnChanges(): void {
+    if (this.isBrowser) {
+      console.log(this.selectedMenuItem);
+      this.resetScene();
+      this.loadModel();
+    }
+  }
+
   ngAfterViewInit(): void {
     if (WINDOW && this.isBrowser && this.el.nativeElement) {
       this.initThreeJS();
       this.loadModel();
       this.animate();
-      console.log(this.selectedMenuItem)
     }
   }
 
@@ -72,34 +79,29 @@ export class MenuItemPreviewComponent implements OnInit, AfterViewInit {
 
   private loadModel() {
     const modelUrl = "../../../../assets/3d-objects/" + this.selectedMenuItem?.threeJsFile;
-    try {
-      this.loader?.load(
-        modelUrl,
-        (gltf: any) => {
-          this.renderedItem = gltf.scene; // Store the loaded model
-          this.scene?.add(gltf.scene);
-        },
-        undefined,
-        (error: any) => {
-          console.error(error);
-        },
-      );
-    } catch (error) {
-      console.error(error);
-      //file not ready yet load best looking model
-      this.loader?.load(
-        "../../../../assets/3d-objects/bubble_tea_and_cookies.glb",
-        (gltf: any) => {
-          this.renderedItem = gltf.scene; // Store the loaded model
-          this.scene?.add(gltf.scene);
-        },
-        undefined,
-        (error: any) => {
-          console.error(error);
-        },
-      );
-      
-    }
+    this.loader?.load(
+      modelUrl,
+      (gltf: any) => {
+        this.renderedItem = gltf.scene; // Store the loaded model
+        this.scene?.add(gltf.scene);
+      },
+      undefined,
+      (error: any) => {
+        console.error(error);
+        //file not ready yet load best looking model
+        this.loader?.load(
+          "../../../../assets/3d-objects/bubble_tea_and_cookies.glb",
+          (gltf: any) => {
+            this.renderedItem = gltf.scene; // Store the loaded model
+            this.scene?.add(gltf.scene);
+          },
+          undefined,
+          (error: any) => {
+            console.error(error);
+          },
+        );
+      },
+    );
   }
 
   private animate() {
@@ -111,6 +113,13 @@ export class MenuItemPreviewComponent implements OnInit, AfterViewInit {
 
     if (this.scene && this.camera && this.renderer) {
       this.renderer.render(this.scene, this.camera);
+    }
+  }
+
+  private resetScene() {
+    if (this.scene && this.camera && this.renderer) {
+      this.scene.remove(this.renderedItem!);
+      this.renderedItem = undefined;
     }
   }
 }

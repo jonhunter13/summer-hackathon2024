@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { MenuItem } from "../../../interfaces/menu-item.interface";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { NgIf } from "@angular/common";
@@ -10,15 +10,10 @@ import { NgIf } from "@angular/common";
   templateUrl: "./menu-item.component.html",
   styleUrl: "./menu-item.component.scss",
 })
-export class MenuItemComponent implements OnInit {
-  @Output() menuSelectEvent = new EventEmitter<MenuItem>();
+export class MenuItemComponent {
   @Input() menuItem!: MenuItem;
+  @Output() menuSelectEvent = new EventEmitter<MenuItem>();
 
-  ngOnInit(): void {
-    if(this.menuItem.selected) {
-      console.log(this.menuItem)
-    }
-  }
   emitMenuItemSelection() {
     this.menuSelectEvent.emit(this.menuItem);
   }
