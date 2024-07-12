@@ -1,0 +1,45 @@
+<div class="container game-details">
+  <mat-grid-list class="game-details-content" cols="2" rowHeight="500px">
+    <mat-grid-tile>
+      <div class="game-details-info-list">
+        <h2 class="game-details-title">{{ game?.title }}</h2>
+        <div class="game-details-info-item">
+          <div class="game-details-info-label">Description:</div>
+          <div class="game-details-description">{{ game?.description }}</div>
+        </div>
+        <div class="game-details-info-item">
+          <div class="game-details-info-label">Publisher:</div>
+          <div class="game-details-info-value">{{ game?.publisher }}</div>
+        </div>
+        <div class="game-details-info-item">
+          <div class="game-details-info-label">Designers:</div>
+          <div class="game-details-info-value">{{ game?.designers?.join(", ") }}</div>
+        </div>
+        <div class="game-details-info-item">
+          <div class="game-details-info-label">Year Published:</div>
+          <div class="game-details-info-value">{{ game?.year_published }}</div>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="game-details-info-list">
+        <div class="game-details-info-item">
+          <div class="game-details-info-label">Number of Players:</div>
+          <div class="game-details-info-value">{{ game?.number_of_players }}</div>
+        </div>
+        <div class="game-details-info-item">
+          <div class="game-details-info-label">Playtime:</div>
+          <div class="game-details-info-value">{{ game?.playtime }}</div>
+        </div>
+        <div class="game-details-info-item">
+          <div class="game-details-info-label">Age Range:</div>
+          <div class="game-details-info-value">{{ game?.age_range }}</div>
+        </div>
+        <div class="game-details-info-item">
+          <div class="game-details-info-label">Game Rules:</div>
+          <div class="game-details-info-value"><a [href]="game?.rules_link" target="_blank">View Rules</a></div>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

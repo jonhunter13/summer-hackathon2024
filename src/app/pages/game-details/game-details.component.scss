@@ -1,0 +1,30 @@
+.game-details {
+    background-image: url('../../../assets/Board game background map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: #000000;
+}
+
+.game-details .game-details-content {
+    display: flex;
+    flex-direction: column;
+    // height: 100%;
+    padding: 50px 200px;
+    line-height: 32px;
+}
+
+.game-details .game-details-description {
+    text-wrap: wrap;
+    line-height: normal;
+}
+
+.game-details .game-details-content .game-details-info-label{
+    font-size: 24px;
+}
+
+.game-details a {
+    color: #007bff;
+    cursor: pointer;
+}
