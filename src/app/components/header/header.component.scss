@@ -25,11 +25,36 @@ a {
   padding: 16px 25px;
 }
 
-a {
-  text-decoration: none; /* Elimina el subrayado de todos los enlaces */
+.fixed-image-header-1{
+  background-image: url('../../../assets/cloud-one.png');
+  width: 165px;
+  height: auto;
+  position: fixed;
+  z-index: 80000;
+  left: 0;
+  top: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
 }
 
-/* Opcional: Si quieres mantener algún estilo visual en el estado hover */
+.fixed-image-header-2{
+  background-image: url('../../../assets/cloud-two.png');
+  width: 156px;
+  height: auto;
+  position: fixed;
+  z-index: 80000;
+  right: 0px;
+  top: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+}
+
+a {
+  text-decoration: none; 
+}
+
 a:hover {
-  text-decoration: none; /* Asegura que el subrayado permanezca eliminado en el hover */
+  text-decoration: none; 
 }

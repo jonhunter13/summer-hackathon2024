@@ -84,6 +84,7 @@ a:hover {
   background: #f1f1f1; /* Color de fondo de la pista de la barra de desplazamiento */
 }
 
+
 ::-webkit-scrollbar-thumb {
   background: #92b873; /* Color del thumb (la parte móvil de la barra de desplazamiento) */
   border-radius: 5px; /* Radio de borde para suavizar las esquinas */
@@ -120,7 +121,7 @@ a:hover {
       transform: translateY(0);
   }
   50% {
-      transform: translateY(10px);
+      transform: translateY(15px);
   }
   100% {
       transform: translateY(0);
@@ -150,7 +151,6 @@ header {
   justify-content: center;
   align-items: center;
   color: #fff;
-  background-color: #c2623d;
   text-align: center;
   padding: 10px;
   bottom: 0;
