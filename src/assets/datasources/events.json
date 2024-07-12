@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Magic: The Gathering Tournament",
+        "description": "Join us for an exciting Magic: The Gathering tournament! Prizes for the top 3 players.",
+        "date": "July 15, 2024",
+        "time": "6:00 PM",
+        "duration": "4 hours"
+    },
+    {
+        "title": "Family Game Night",
+        "description": "Bring the whole family for a night of classic board games and fun!",
+        "date": "July 20, 2024",
+        "time": "5:00 PM",
+        "duration": "3 hours"
+    },
+    {
+        "title": "Dungeons & Dragons Campaign",
+        "description": "Join our weekly D&D campaign led by our experienced Dungeon Master.",
+        "date": "July 25, 2024",
+        "time": "7:00 PM",
+        "duration": "3 hours"
+    },
+    {
+        "title": "Chess Tournament",
+        "description": "Compete in our monthly chess tournament. All skill levels welcome.",
+        "date": "July 28, 2024",
+        "time": "4:00 PM",
+        "duration": "4 hours"
+    }
+]

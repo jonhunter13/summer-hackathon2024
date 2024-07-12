@@ -1,1 +1,29 @@
-<p>events works!</p>
+<div class="container">
+  <page-header-events></page-header-events>
+  <mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-tile>
+      <p>
+        At Sip & Play, we host a variety of exciting events for board game enthusiasts of all ages. Whether you're a
+        seasoned player or just looking for a fun night out, there's something for everyone. Join us for tournaments,
+        family game nights, and special campaigns. Check out our event calendar and mark your favorite dates. Don't miss
+        out on the fun!
+      </p>
+    </mat-grid-tile>
+    <mat-grid-tile class="events-calendar">
+      <div class="month">
+        {{ month }}
+      </div>
+      <div class="event-details">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li *ngFor="let event of events">
+            <h3>{{ event.title }}</h3>
+            <p>{{ event.description }}</p>
+            <p>{{ event.date }}</p>
+            <p>{{ event.duration }}</p>
+          </li>
+        </ul>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
