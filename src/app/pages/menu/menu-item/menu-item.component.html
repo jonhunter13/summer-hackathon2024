@@ -1,0 +1,11 @@
+<div class="menu-item">
+  <span *ngIf="!menuItem.selected" (click)="emitMenuItemSelection()">
+    <img height="25px" width="25px" src="assets/menu-btn.png" alt="menu-btn"
+  /></span>
+  <span *ngIf="menuItem.selected" (click)="emitMenuItemSelection()">
+    <img height="25px" width="25px" src="assets/menu-btn-active.png" alt="menu-btn"
+  /></span>
+  {{ menuItem.title }}
+  <br />
+  {{ menuItem.price }}
+</div>

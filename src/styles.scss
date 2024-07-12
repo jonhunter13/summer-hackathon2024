@@ -33,7 +33,7 @@
 
 html {
   background: var(--background);
-  background-image: url('assets/background.png');
+  background-image: url('assets/background-fixed.png'), url('assets/background-bottom.png');
 }
 
 body {
@@ -68,7 +68,7 @@ a:hover {
 
 .container {
   font-family: "Press Start 2P", "Helvetica Neue", sans-serif;
-  margin: 150px 20px 100px 20px;
+  margin: 200px 20px 100px 120px;
 }
 
 .horizontal-content {
