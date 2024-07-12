@@ -176,6 +176,10 @@ header {
   z-index: 1000;
 }
 
+.heading {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1023px) {
   .heading,
   .large-heading {
