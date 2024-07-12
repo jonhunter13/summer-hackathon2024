@@ -36,6 +36,7 @@ Tip: Don't forget to turn on the music while you browse the site!
 - ThreeJS
 - Firebase for CI/CD
 - Vercel
+- Google Analytics
 
 ## Getting Started
 
