@@ -1,58 +1,62 @@
-import { Component, OnInit, ElementRef, AfterViewInit } from "@angular/core";
-import * as THREE from "three";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { NgFor } from "@angular/common";
+
+import items from "../../../assets/datasources/menu-items.json";
+import { MenuItem, Category } from "../../interfaces/menu-item.interface";
+import { MatGridListModule } from "@angular/material/grid-list";
+import { MenuItemComponent } from "./menu-item/menu-item.component";
+import { PageHeaderMenuComponent } from "../../components/icons/page-header-menu.component";
+import { MatDividerModule } from "@angular/material/divider";
+import { MenuItemPreviewComponent } from "./menu-item-preview/menu-item-preview.component";
 
 @Component({
   selector: "app-menu",
   standalone: true,
-  imports: [],
+  imports: [
+    MatGridListModule,
+    MatDividerModule,
+    MenuItemComponent,
+    MenuItemPreviewComponent,
+    NgFor,
+    PageHeaderMenuComponent,
+  ],
   templateUrl: "./menu.component.html",
   styleUrl: "./menu.component.scss",
+  encapsulation: ViewEncapsulation.None,
 })
-export class MenuComponent implements OnInit, AfterViewInit {
-  private renderer: THREE.WebGLRenderer | undefined;
-  private scene: THREE.Scene | undefined;
-  private camera: THREE.PerspectiveCamera | undefined;
-  private cube: THREE.Mesh | undefined;
+export class MenuComponent implements OnInit {
+  items = items as MenuItem[];
+  selectedMenuItem: MenuItem = items[0];
+  selectedMenuItem2: MenuItem = items.find((item: MenuItem) => item.threeJsFile === "chicken_poppers.glb")!;
 
-  constructor(private el: ElementRef) {}
-
-  ngOnInit(): void {}
-
-  ngAfterViewInit(): void {
-    this.initThreeJS();
-    this.animate();
+  ngOnInit(): void {
+    this.selectDefaultRenderedMenuItems();
   }
 
-  private initThreeJS() {
-    // Create the renderer
-    this.renderer = new THREE.WebGLRenderer({ antialias: true });
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
-    this.el.nativeElement.appendChild(this.renderer.domElement);
-
-    // Create the scene
-    this.scene = new THREE.Scene();
-
-    // Create the camera
-    this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    this.camera.position.z = 5;
-
-    // Add a cube
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    this.cube = new THREE.Mesh(geometry, material);
-    this.scene.add(this.cube);
+  getMenuItems(category: Category): MenuItem[] {
+    return this.items.filter((item: MenuItem) => item.category === category);
   }
 
-  private animate() {
-    requestAnimationFrame(() => this.animate());
+  handleMenuItemSelect(selectedMenuItem: MenuItem) {
+    const menuItemIdx = this.items.findIndex((item: MenuItem) => item.title === this.selectedMenuItem.title);
+    this.items[menuItemIdx] = { ...this.selectedMenuItem, selected: false };
 
-    if (this.renderer && this.scene && this.camera && this.cube) {
-      // Rotate the cube
-      this.cube.rotation.x += 0.01;
-      this.cube.rotation.y += 0.01;
+    const newMenuItemStateIdx = this.items.findIndex((item: MenuItem) => item.title === selectedMenuItem.title);
+    this.items[newMenuItemStateIdx] = { ...selectedMenuItem, selected: true };
+    this.selectedMenuItem = this.items[newMenuItemStateIdx];
+  }
 
-      // Render the scene
-      this.renderer.render(this.scene, this.camera);
-    }
+  handleMenuItemSelect2(selectedMenuItem: MenuItem) {
+    const menuItemIdx = this.items.findIndex((item: MenuItem) => item.title === this.selectedMenuItem2.title);
+    this.items[menuItemIdx] = { ...this.selectedMenuItem2, selected: false };
+
+    const newMenuItemStateIdx = this.items.findIndex((item: MenuItem) => item.title === selectedMenuItem.title);
+    this.items[newMenuItemStateIdx] = { ...selectedMenuItem, selected: true };
+    this.selectedMenuItem2 = this.items[newMenuItemStateIdx];
+  }
+
+  selectDefaultRenderedMenuItems() {
+    this.handleMenuItemSelect(this.selectedMenuItem);
+    this.handleMenuItemSelect2(this.selectedMenuItem2);
   }
 }

@@ -8,7 +8,7 @@
     {
         "title": "CORTADO",
         "category": "coffee",
-        "threeJsFile": "cortado.glb",
+        "threeJsFile": "cafe_latte_with_art.glb",
         "price": "$4.25(H)/$4.75(C)"
     },
     {
@@ -96,49 +96,49 @@
         "price": "$5.75(H)/$6.25(C)"
     },
     {
-        "title": "MATCHA LATTE",
+        "title": "MATCHA LATTE Boba",
         "category": "boba",
-        "threeJsFile": "boba_tea_cup.glb",
+        "threeJsFile": "bubble_tea_and_cookies.glb",
         "price": "$5.25(H)/$5.75(C)"
     },
     {
-        "title": "HOT CHOCOLATE",
+        "title": "HOT CHOCOLATE Boba",
         "category": "boba",
         "threeJsFile": "hot_chocolate_boba.glb",
         "price": "$4.50(H)"
     },
     {
-        "title": "NUTELLA LATTE",
+        "title": "NUTELLA LATTE Boba",
         "category": "boba",
         "threeJsFile": "nutella_latte_boba.glb",
         "price": "$5.75(H)/$6.25(C)"
     },
     {
-        "title": "CHAI",
+        "title": "CHAI Boba",
         "category": "boba",
         "threeJsFile": "chai_boba.glb",
         "price": "$5.00(H)/$5.50(C)"
     },
     {
-        "title": "DIRTY CHAI",
+        "title": "DIRTY CHAI Boba",
         "category": "boba",
         "threeJsFile": "dirty_chai_boba.glb",
         "price": "$6.25(H)/$6.75(C)"
     },
     {
-        "title": "LAVENDAR LATTE",
+        "title": "LAVENDAR LATTE Boba",
         "category": "boba",
         "threeJsFile": "lavendar_latte_boba.glb",
         "price": "$5.75(H)/$6.25(C)"
     },
     {
-        "title": "ROSE LATTE",
+        "title": "ROSE LATTE Boba",
         "category": "boba",
         "threeJsFile": "rose_latte_boba.glb",
         "price": "$5.75(H)/$6.25(C)"
     },
     {
-        "title": "BROWN SUGAR LATTE",
+        "title": "BROWN SUGAR LATTE Boba",
         "category": "boba",
         "threeJsFile": "brown_sugar_latte_boba.glb",
         "price": "$5.75(H)/$6.25(C)"

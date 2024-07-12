@@ -1,0 +1,10 @@
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    transition: all 0.3s;
+}
+.menu-item span {
+    align-content: center;
+    cursor: pointer;
+}
