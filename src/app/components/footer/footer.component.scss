@@ -96,6 +96,15 @@
   vertical-align: middle;
 }
 
+
+
+@media screen and (max-width: 1440px) {
+  .prefooter .column {
+    width: 88%;
+  }
+}
+
+
 /* Media Queries */
 @media (max-width: 1024px) {
   .footer {

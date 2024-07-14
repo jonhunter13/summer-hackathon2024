@@ -27,6 +27,20 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1440px) {
+    .game-details {
+        height: 75vh;
+    }
+
+    .game-details-content{
+        width: 80% !important;
+        left: 100px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+  }
+
 .game-details-content{
     width: 1000px;
     margin-left: auto;

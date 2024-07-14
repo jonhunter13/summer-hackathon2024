@@ -1,6 +1,6 @@
 .hometotalcontainer {
   max-width: 1400px;
-  width: 75%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 300px;
@@ -31,6 +31,22 @@
   background-repeat: no-repeat;
   top: 111px;
   margin-left: -78px;
+}
+
+@media screen and (max-width: 1440px) {
+  .homecontainer {
+    height: 820px;
+  }
+
+  .global-home-head {
+    height: 700px;
+  }
+
+  .homepage-castle {
+    top: 69px;
+    margin-left: -68px;
+  }
+  
 }
 
 .reservation_button {

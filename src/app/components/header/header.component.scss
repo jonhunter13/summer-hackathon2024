@@ -68,6 +68,14 @@ a:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1440px) {
+  .nav-links {
+    display: flex;
+    gap: 30px; /* Space between links */
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
