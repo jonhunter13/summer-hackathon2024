@@ -154,10 +154,54 @@ a:hover {
 /* Estilos específicos para IE/Edge (no compatible con personalización avanzada) */
 /* Para versiones antiguas de IE, la personalización es muy limitada y no se recomienda */
 
+/* Flexbox Example */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 600px) {
+  .flex-item {
+    flex: 1 1 48%;
+  }
+}
+
+@media (min-width: 992px) {
+  .flex-item {
+    flex: 1 1 30%;
+  }
+}
+
+/* CSS Grid Example */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 
 .container {
   font-family: "Press Start 2P", "Helvetica Neue", sans-serif;
   margin: 200px 20px 100px 20px;
+  width: 100%;
+
 }
 
 @keyframes floatAnimation {

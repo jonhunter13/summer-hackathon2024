@@ -1,3 +1,26 @@
+.hometotalcontainer {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.homecontainer {
+  background-image: url("../../../assets/laptop-frame.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 310px;
+}
+
+.global-home-head {
+  height: 300px;
+}
+
+.first-home {
+  margin-left: 135px;
+}
+
 .homepage-castle {
   background-image: url('../../../assets/homepage-castle.png');
   background-size: contain;
@@ -9,30 +32,7 @@
   margin-left: -58px;
 }
 
-.hometotalcontainer{
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
-}
-
-.global-home-head{
-  height: 300px;
-}
-
-.first-home{
-  margin-left: 135px;
-}
-
-.homecontainer{
-  background-image: url("../../../assets/laptop-frame.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 310px;
-}
-
-.reservation_button{
+.reservation_button {
   background-image: url("../../../assets/background-start-button.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -45,13 +45,73 @@
   color: white;
   cursor: pointer;
   transition: transform 0.3s ease;
-  display: flex; /* Utiliza flexbox para centrar el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
-  justify-content: center; /* Centra horizontalmente el contenido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .reservation_button:hover {
-  transform: scale(1.2); /* Escala el botón 1.5 veces su tamaño original */
+  transform: scale(1.2);
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+  .homecontainer {
+    height: auto;
+    background-size: cover;
+  }
+
+  .homepage-castle {
+    width: 100% !important;
+    margin-left: 0;
+  }
+
+  .first-home {
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .global-home-head {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .homecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage-castle {
+    order: 2;
+  }
+
+  .global-home-head {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .reservation_button {
+    width: 180px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p img {
+    width: 100%;
+    height: auto;
+  }
+}
