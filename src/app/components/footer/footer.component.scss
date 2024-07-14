@@ -1,100 +1,160 @@
-
-
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    margin: 0 auto;
-    background-image: url("../../../assets/footer-bg.png");
-    background-size: contain;
-    height: 500px;
-    background-position: top;
-    margin-top: -10px;
-  }
-
-  .logoqc{
-    background-image: url('../../../assets/questing-coders.png');
-    background-size: contain;
-    width: 250px;
-    background-repeat: no-repeat;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-  }
-
-  .logowhite{
-    background-image: url('../../../assets/logofooter.png');
-    background-size: contain;
-    width: 134px;
-    background-repeat: no-repeat;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-  }
-
-  .text-footer{
-    font-family: "VT323", "Helvetica Neue", sans-serif !important;
-    font-size: 24px;
-  }
-
-.inner-footer{
-    max-width: 1400px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0 auto;
+  background-image: url("../../../assets/footer-bg.png");
+  background-size: contain;
+  height: 500px;
+  background-position: top;
+  margin-top: -10px;
 }
 
-  .prefooter .column {
-    background-image: url('../../../assets/pre-footer-mountain.png');
-    background-size: contain;
-    background-position: center;
-    height: 550px;
-    background-repeat: no-repeat;
-    width: 50%;
-    margin-left: auto;
-    position: relative;
-    left: 20px;
-  }
+.logoqc {
+  background-image: url('../../../assets/questing-coders.png');
+  background-size: contain;
+  width: 250px;
+  background-repeat: no-repeat;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
 
-  .fixed-image {
-    position: absolute;
-    z-index: 8000;
-    background-image: url('../../../assets/group-footer.png');
+.logowhite {
+  background-image: url('../../../assets/logofooter.png');
+  background-size: contain;
+  width: 134px;
+  background-repeat: no-repeat;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.text-footer {
+  font-family: "VT323", "Helvetica Neue", sans-serif !important;
+  font-size: 24px;
+}
+
+.inner-footer {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+.prefooter .column {
+  background-image: url('../../../assets/pre-footer-mountain.png');
+  background-size: contain;
+  background-position: center;
+  height: 440px;
+  background-repeat: no-repeat;
+  width: 50%;
+  margin-left: auto;
+  position: relative;
+  left: 20px;
+}
+
+.fixed-image {
+  position: absolute;
+  z-index: 8000;
+  background-image: url('../../../assets/group-footer.png');
+  background-size: cover;
+  width: 567px;
+  background-repeat: no-repeat;
+  height: 269px;
+  left: 200px;
+  bottom: 0;
+}
+
+.prefooter {
+  margin-top: 100px;
+  position: relative;
+}
+
+.column {
+  flex: 1;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media img {
+  vertical-align: middle;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
     background-size: cover;
-    width: 567px;
-    background-repeat: no-repeat;
-    height: 269px;
-    left: 200px;
-    bottom: 0;
   }
   
-  .prefooter{
-    margin-top: 100px;
+  .inner-footer {
+    flex-direction: column;
+    align-items: center;
+    top: 130px;
     position: relative;
+    gap: 20px;
   }
   
   .column {
-    flex: 1;
+    width: 100%;
+    margin-bottom: 20px;
   }
   
-  .social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+  .logowhite {
+    width: 100px;
+    height: 109px;
+    margin-bottom: 10px;
+  }
+
+  .logoqc{
+    width: 100px;
+    height: 69px;
+    margin-bottom: 10px;
   }
   
-  .social-media a {
-    margin-right: 10px;
+  .text-footer {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-footer {
+    font-size: 16px;
+  }
+  
+  .fixed-image {
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: -20px;
+  }
+  
+  .prefooter .column {
+    width: 100%;
+    height: auto;
+    left: 0;
   }
   
   .social-media img {
-    vertical-align: middle;
+    height: 40px;
   }
-  
+}

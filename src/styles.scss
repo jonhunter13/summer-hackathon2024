@@ -12,6 +12,16 @@
   --button: #0b151e;
 }
 
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  svg{
+    width: 100%
+  }
+}
+
+
 .dark-theme {
   --primary-contrast: #fff;
   --secondary-contrast: #ffffff99;
@@ -28,6 +38,8 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 p{
@@ -56,7 +68,6 @@ h2{
 }
 
 html {
-  zoom: 80%;
   background-image: url('assets/final-background.png');
 }
 
@@ -175,6 +186,8 @@ a:hover {
   .flex-item {
     flex: 1 1 30%;
   }
+  
+
 }
 
 /* CSS Grid Example */

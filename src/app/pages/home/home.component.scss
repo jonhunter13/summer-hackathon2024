@@ -1,20 +1,21 @@
 .hometotalcontainer {
   max-width: 1400px;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+  margin-top: 300px;
 }
 
 .homecontainer {
   background-image: url("../../../assets/laptop-frame.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  height: 310px;
+  background-size: cover;
+  height: 1000px;
 }
 
 .global-home-head {
-  height: 300px;
+  height: 900px;
 }
 
 .first-home {
@@ -28,8 +29,8 @@
   display: flex;
   width: 50% !important;
   background-repeat: no-repeat;
-  top: 116px;
-  margin-left: -58px;
+  top: 111px;
+  margin-left: -78px;
 }
 
 .reservation_button {
@@ -57,19 +58,27 @@
 /* Media Queries */
 @media (max-width: 1024px) {
   .homecontainer {
+    margin-top: 250px; /* Reduce top margin for small screens */
     height: auto;
     background-size: cover;
   }
+
 
   .homepage-castle {
     width: 100% !important;
     margin-left: 0;
   }
 
+  .hometotalcontainer{
+    height: 650px;
+    width: 90%;
+  }
+
   .first-home {
     margin-left: 0;
     padding: 20px;
     text-align: center;
+    place-items: center;
   }
 
   .global-home-head {
@@ -85,16 +94,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 500px;
+    background-image: unset;
   }
+  
 
   .homepage-castle {
     order: 2;
+    display: none;
   }
 
   .global-home-head {
     order: 1;
-    width: 100%;
+    width: 100% !important;
     text-align: center;
+    height: 700px;
   }
 
   .reservation_button {

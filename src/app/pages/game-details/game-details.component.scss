@@ -15,9 +15,8 @@
 }
 
 .game-details .game-details-description {
-    text-wrap: wrap;
-    line-height: normal;
-}
+    white-space: pre-wrap; /* Ajusta el comportamiento de la descripción */
+  }
 
 .game-details .game-details-content .game-details-info-label{
     font-size: 24px;
@@ -29,10 +28,10 @@
 }
 
 .game-details-content{
-    width: 700px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    top: 140px;
+    top: 160px;
 }
 
 .details-page{
@@ -51,3 +50,25 @@
     top: 20px;
     position: relative;
 }
+
+@media (max-width: 767.98px) {
+    .game-details .game-details-content {
+      padding: 10px; /* Ajusta el espaciado interno en dispositivos móviles */
+    }
+
+    .details-page{
+        width: 90%;
+    }
+
+    .game-details-content{
+        top: 80px;
+    }
+  
+    .game-details .game-details-info-item {
+      padding: 10px 0;
+    }
+  
+    .game-details .pixelb {
+      margin-top: 20px; /* Ajusta el margen superior del botón de retroceso en dispositivos móviles */
+    }
+  }

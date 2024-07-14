@@ -1,36 +1,54 @@
-.events-page
-{
+.events-page {
     max-width: 1400px;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 300px;
-}
-
-.events-calendar {
+    margin: 300px auto; /* Ajusta según sea necesario */
+  }
+  
+  .events-content {
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+    flex-direction: row;
     align-items: center;
-}
+  }
+  
+  .events-intro {
+    flex: 1 1 50%; /* Ocupa todo el ancho en dispositivos móviles */
+  }
+  
+  .events-calendar {
+    flex: 1 1 50%; /* Ocupa la mitad del ancho en escritorios */
+  }
+  
+  .events-intro p {
+    font-size: 1rem; /* Ajusta según sea necesario */
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 991.98px) {
+    .events-content {
+      flex-direction: column; /* Cambia a una columna en dispositivos móviles */
+      flex-wrap: wrap;
+      gap: 30px; /* Espacio entre los elementos */
+      align-items: stretch;
+    }
 
-.events-intro {
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 45px;
-}
+    .events-intro {
+        flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos móviles */
+      }
+      
 
-.month {
-    color: #9CC07F;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.event-details {
-    max-height: 75%;
-    max-width: 75%;
-    font-size: .9rem;
-}
-
-.event-details li {
-    list-style: none;
-}
+    .events-page {
+        width: 90%;
+      }
+  
+    .events-calendar {
+      flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos móviles */
+      margin-top: 30px; /* Espacio entre los elementos en dispositivos móviles */
+    }
+  
+    .events-intro p {
+      font-size: 0.9rem; /* Ajusta según sea necesario */
+    }
+  }
+  

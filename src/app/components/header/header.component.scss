@@ -3,29 +3,38 @@
   top: 6vh;
   display: flex;
   width: 80%;
-  max-width: 1600px;
-  height: 100px;
+  max-width: 1400px;
+  height: 87px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between; /* Changed from space-around */
   border-radius: 10px;
   z-index: 1000;
-    background-image: url("../../../assets/menu-header-background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: transparent;
-    border-color: transparent;
-    border: none;
-    color: white;
+  background-image: url("../../../assets/menu-header-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border-color: transparent;
+  border: none;
+  color: white;
+  padding: 0 20px; /* Added padding */
 }
+
 a {
   cursor: pointer;
 }
+
 .header img {
   padding: 16px 25px;
+  max-width: 240px; /* Limit image size */
 }
 
-.fixed-image-header-1{
+.nav-links {
+  display: flex;
+  gap: 85px; /* Space between links */
+}
+
+.fixed-image-header-1 {
   background-image: url('../../../assets/cloud-one.png');
   width: 165px;
   height: auto;
@@ -38,7 +47,7 @@ a {
   aspect-ratio: 1 / 1;
 }
 
-.fixed-image-header-2{
+.fixed-image-header-2 {
   background-image: url('../../../assets/cloud-two.png');
   width: 156px;
   height: auto;
@@ -52,18 +61,38 @@ a {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-@media screen and (max-width: 768px){
-  .fixed-image-header-1{
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    top: 2vh;
+    height: auto;
+    padding: 10px; /* Added padding */
+  }
+
+  .header img {
+  padding: 0px 0px 12px 0px;
+  width: 100px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    font-size: 14px;
+  }
+
+  .fixed-image-header-1 {
     display: none;
   }
-  .fixed-image-header-2{
+
+  .fixed-image-header-2 {
     display: none;
   }
 }
