@@ -4,6 +4,8 @@ Questing Coders is proud to present a fully redesigned Sip & Play Website.
 
 Figma Design can be found [here](https://www.figma.com/design/K51XvDgoSvHWpwo3pBSgs9/Questing-Coders?node-id=0-1&t=e4xoJ5Oht9OdCvDi-1).
 
+Demo Site Available here: http://sipnplay-questing-coders.xyz
+
 ### Pages
 
 Home - Welcoming page with a call to action to make a reservation
